@@ -18,15 +18,25 @@ background-color: #white;
 
 .form {
   clear:both;
-  position: relative;
+  position: fixed;
+  top: 10%;
+  right: 35%;
   z-index: 1;
   background: #FDFDFD;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
-  text-align: center;
+  /*text-align: center;*/
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
+.form label{
+	text-align: right;
+	  font-size: 10px;
+
+
+}
+
 .form input {
   font-family: "Open Sans", sans-serif;
   outline: 0;
@@ -36,7 +46,7 @@ background-color: #white;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 10px;
 }
 .form button {
   font-family: "Open Sans", sans-serif;
@@ -74,4 +84,5 @@ background-color: #white;
   right:0;
   bottom:0;
   position:absolute;
+  overflow: hidden;
 }
