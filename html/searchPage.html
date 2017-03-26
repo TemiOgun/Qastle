@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Qastles Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="map.js"></script>
+  <link rel="stylesheet" type="text/css" href="SearchStyle.css">
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_3WY3NtVldlLXGS0dMFR7C1FKeuh3aSQ&callback=initMap">
+      </script>
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><img src="JustIcon.jpg" width="45" height="45" alt=""></li>
+
+        <li><a href="#">Landlords</a></li>
+        <li><a href="#">Tenants</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="searchPage">
+      <h1 id="tagline">Rediscover House Hunting</h1>
+      <p id="slogan">
+        Join us, and find the castle of your dreams, today.
+      </p>
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="typeInput">Type of Place</label>
+          <select name="type" id="typeInput" placeholder="Accomodation Type">
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Room</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="priceInput">Show places up to Price($)</label>
+          <input type="text" id="priceInput"name="price" placeholder="Price" />
+        </div>
+        <div class="form-group">
+          <label for="occupantsInput">Number of Occupants</label>
+          <select name="numPeople" id="occupantsInput"placeholder="Occupants">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="bathroomInouts">Number of Bathrooms</label>
+          <select name="numBathrooms" id="bathroomsInput"placeholder="Bathrooms">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="map">
+    </div>
+
+</body>
+</html>
