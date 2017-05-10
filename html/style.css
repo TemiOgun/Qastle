@@ -5,17 +5,36 @@
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
-color: white; /*BACKGROUND color for active*/
-background-color: #white;
+color: black; /*BACKGROUND color for active*/
+background-color: white;
+text-align:center;
 }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    font-size:16px;
+
+}
+
+.navbar a{
+  color:navy;
+}
+
 
 .navbar-nav > li > a, .navbar-brand {
     padding-top:15px !important; padding-bottom:0 !important;
     height: 30px;
+
 }
-.navbar {min-height:60px !important;}
-
-
+.navbar {min-height:60px !important;
+          }
+.navbar > input {
+  display:inline;
+}
 .form {
   clear:both;
   position: fixed;
@@ -26,6 +45,7 @@ background-color: #white;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
+  display: inline-block;
   /*text-align: center;*/
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -77,7 +97,9 @@ background-color: #white;
 .form .register-form {
   display: none;
 }
-
+#imageDiv{
+  display: block;
+}
 #image{
   top:0;
   left:0;
@@ -85,4 +107,29 @@ background-color: #white;
   bottom:0;
   position:absolute;
   overflow: hidden;
+}
+
+#tenantLabel{
+  display: block;
+  width: 60px;
+  text-align: right;
+  font-size: 15px;
+  margin: 7px 10px 3px 3px;
+}
+
+.two-col{
+  overflow: hidden;
+}
+
+.two-col .col1,
+.two-col .col2{
+  width: 49%;
+}
+
+.two-col .col1{
+  float:left;
+}
+
+.two-col .col2{
+  float: right;
 }

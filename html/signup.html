@@ -35,10 +35,8 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact Us</a> </li>
-        <a href="#" class="navbar-left"><span class="glyphicon glyphicon-search"></span><img style="max-width:200px" src="LOGO_High-Res.jpg"></a>
+        <li><img src="JustIcon.jpg" width="45" height="45" alt=""></li>
 
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Landlords</a></li>
         <li><a href="#">Tenants</a></li>
         <li><a href="#">Sign Up</a></li>
@@ -50,14 +48,25 @@
   <div id = "image">
    <img class="img-responsive" src="landing-page.jpeg" alt="Picture of a big house"> 
  </div>
-    <div class="form">
+    <div class="form two-col">
+      <div class= "imageDiv col1">
+        <label class="btn btn-default btn-file">
+             <input type="file" hidden> Add an Image
+        </label>     
+      </div>
+      <div class = "col2">
     <form class="login-form", method=POST>
 
-      <label for="firstNameInput">First Name</label>
-      <input type="text" id = "firstNameInput" placeholder="Enter first name"/>
-
-      <label for="lastNameInput">Last Name</label>
-      <input type="text" id = "lastNameInput" placeholder="Enter last name"/>
+      <div class = "two-col">
+          <div class = "col1">
+        <label for="firstNameInput">First Name</label>
+        <input type="text" id = "firstNameInput" placeholder="Enter first name"/>
+          </div>
+        <div class = "col2">
+        <label for="lastNameInput">Last Name</label>
+        <input type="text" id = "lastNameInput" placeholder="Enter last name"/>
+      </div>
+      </div>
 
       <label for="lastNameInput">Email</label>
        <input type="email" id = "emailInput" placeholder="Enter Email"/>
@@ -73,11 +82,16 @@
 
       <label for="CityInput">City</label>
       <input type="text" id = "CityInput" value="" placeholder="Enter City" />
-      <div id ="tenant">
-        <button>Register</button>
-        <button>Register</button>
+        <label for="tenant" id = "tenantLabel">I am a...</label>
+        <div id = "registrationType" class = "btn-group two-col">
+          <div class = "col1">
+          <a id ="tenant" class="btn btn-default">Tenant</a>
+        </div>
+        <div class = "col2">
+          <a id = "landlord" class="btn btn-default">Landlord</a>
+        </div>
       </div>
-
+      </div>
       <button>Register</button>
     </form>
   </div>
