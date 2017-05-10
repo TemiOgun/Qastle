@@ -1,0 +1,38 @@
+@import url(./base.css);
+.searchPage {
+    color: #black;
+    padding: 15px;
+    background: #FDFDFD;
+    color: black;
+}
+
+#map {
+
+    height: 700px;
+    width: 100%;
+}
+
+#tagline {
+    color: #6e4594;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+
+    font-size: 20px;
+
+}
+
+.searchPage{
+  margin-top:10px;
+  width: 80%;
+  height:40%;
+
+
+.searchPage button:hover, .searchPage button:active, .searchPage button:focus {
+    background: #6e4594;
+}
