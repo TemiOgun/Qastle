@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QASTLE - Leave a Review</title>
+<link href="tools/reviewStyle.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="tools/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="tools/jquery.min.js"></script> 
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Oxygen" rel="stylesheet">
+<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+
+
+</head>
+<body>
+<div class="transy"></div>
+<div class="form">
+    <form method=POST>
+
+    	<div>
+    	<h1> Leave a Review </h1><br><br>
+    	<h3> If you leave your email we'll let you know when you can come see your review live on Qastles. </h3>
+   		 </div>
+
+  
+     <div class = "form-item">
+        <label for="address"> Address
+        <input type="text" name = "address" value="" placeholder="Ex. 591 Johnson St." />
+        </label>
+      </div>
+
+        <div class = "form-item">
+        <label for="endorse">I would live here for another year if I could.<br><br>
+        <ul>
+        	<div class = "two-col">
+        		<div class = "col1">
+        				<li> <input type="radio" name="endorse" id="yes" value="true"> <label for="yes"></label></li>
+        		</div>
+        		<div class = "col2">
+        			<label class = "endorse"> Yes</label>
+        		</div> 
+        	</div>
+
+        	<div class = "two-col">
+        		<div class = "col1">
+        			<li><input type="radio" id="no" name = "endorse" value="false"/><label for="no"></label> </li>
+        		</div>
+        		<div class = "col2">
+        			<label class = "endorse" > No</label>
+        		</div> 
+        	</div>
+    	</ul>
+   		</label>
+      </div>
+
+
+	<label class = "form-item title" for="ratings">Give a rating for each of the following:<br><br>
+       		<div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Location</h2>
+       			</div>
+       			<div class = "col2"> 
+       				<div class="stars">
+    <input class="star star-5" id="location-5" type="radio" name="location"/>
+    <label class="star star-5" for="location-5"></label>
+    <input class="star star-4" id="location-4" type="radio" name="location"/>
+    <label class="star star-4" for="location-4"></label>
+    <input class="star star-3" id="location-3" type="radio" name="location"/>
+    <label class="star star-3" for="location-3"></label>
+    <input class="star star-2" id="location-2" type="radio" name="location"/>
+    <label class="star star-2" for="location-2"></label>
+    <input class="star star-1" id="location-1" type="radio" name="location"/>
+    <label class="star star-1" for="location-1"></label>
+			</div>
+       			</div>
+       		</div>
+
+
+
+       		<div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Value</h2>
+		       			</div>
+		      <div class="stars">
+		    <input class="star star-5" id="value-5" type="radio" name="value"/>
+		    <label class="star star-5" for="value-5"></label>
+		    <input class="star star-4" id="value-4" type="radio" name="value"/>
+		    <label class="star star-4" for="value-4"></label>
+		    <input class="star star-3" id="value-3" type="radio" name="value"/>
+		    <label class="star star-3" for="value-3"></label>
+		    <input class="star star-2" id="value-2" type="radio" name="value"/>
+		    <label class="star star-2" for="value-2"></label>
+		    <input class="star star-1" id="value-1" type="radio" name="value"/>
+		    <label class="star star-1" for="value-1"></label>
+		</div>
+
+       		</div>
+
+
+
+       		<div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Living Space</h2>
+		       			</div>
+				<div class="stars">
+			    <input class="star star-5" id="living-5" type="radio" name="living"/>
+			    <label class="star star-5" for="living-5"></label>
+			    <input class="star star-4" id="living-4" type="radio" name="living"/>
+			    <label class="star star-4" for="living-4"></label>
+			    <input class="star star-3" id="living-3" type="radio" name="living"/>
+			    <label class="star star-3" for="living-3"></label>
+			    <input class="star star-2" id="living-2" type="radio" name="living"/>
+			    <label class="star star-2" for="living-2"></label>
+			    <input class="star star-1" id="living-1" type="radio" name="living"/>
+			    <label class="star star-1" for="living-1"></label>
+			</div>
+       		</div>
+
+
+       			<div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>bedrooms</h2>
+					       			</div>
+				     	<div class="stars">
+			    <input class="star star-5" id="bedroom-5" type="radio" name="bedroom"/>
+			    <label class="star star-5" for="bedroom-5"></label>
+			    <input class="star star-4" id="bedroom-4" type="radio" name="bedroom"/>
+			    <label class="star star-4" for="bedroom-4"></label>
+			    <input class="star star-3" id="bedroom-3" type="radio" name="bedroom"/>
+			    <label class="star star-3" for="bedroom-3"></label>
+			    <input class="star star-2" id="bedroom-2" type="radio" name="bedroom"/>
+			    <label class="star star-2" for="bedroom-2"></label>
+			    <input class="star star-1" id="bedroom-1" type="radio" name="bedroom"/>
+			    <label class="star star-1" for="bedroom-1"></label>
+			</div>
+			     	
+       		</div>
+
+
+
+       			<div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Access to landlord</h2>
+					       			</div>
+			<div class="stars">
+			    <input class="star star-5" id="landlord-5" type="radio" name="landlord"/>
+			    <label class="star star-5" for="landlord-5"></label>
+			    <input class="star star-4" id="landlord-4" type="radio" name="landlord"/>
+			    <label class="star star-4" for="landlord-4"></label>
+			    <input class="star star-3" id="landlord-3" type="radio" name="landlord"/>
+			    <label class="star star-3" for="landlord-3"></label>
+			    <input class="star star-2" id="landlord-2" type="radio" name="landlord"/>
+			    <label class="star star-2" for="landlord-2"></label>
+			    <input class="star star-1" id="landlord-1" type="radio" name="landlord"/>
+			    <label class="star star-1" for="landlord-1"></label>
+			</div>  	
+       		</div>
+
+
+
+
+       		 <div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Kitchen</h2>
+				</div>
+				     	<div class="stars">
+			    <input class="star star-5" id="kitchen-5" type="radio" name="kitchen"/>
+			    <label class="star star-5" for="kitchen-5"></label>
+			    <input class="star star-4" id="kitchen-4" type="radio" name="kitchen"/>
+			    <label class="star star-4" for="kitchen-4"></label>
+			    <input class="star star-3" id="kitchen-3" type="radio" name="kitchen"/>
+			    <label class="star star-3" for="kitchen-3"></label>
+			    <input class="star star-2" id="kitchen-2" type="radio" name="kitchen"/>
+			    <label class="star star-2" for="kitchen-2"></label>
+			    <input class="star star-1" id="kitchen-1" type="radio" name="kitchen"/>
+			    <label class="star star-1" for="kitchen-1"></label>
+			</div> 	
+       		</div>
+
+
+
+       		 <div name = "ratings" class = "two-col form-item">
+
+       			<div class = "col1-stars">
+       				<h2>Bathroom</h2>
+				
+			     	<div class="stars">
+
+			    <input class="star star-5" id="bathroom-5" type="radio" name="bathroom"/>
+			    <label class="star star-5" for="bathroom-5"></label>
+			    <input class="star star-4" id="bathroom-4" type="radio" name="bathroom"/>
+			    <label class="star star-4" for="bathroom-4"></label>
+			    <input class="star star-3" id="bathroom-3" type="radio" name="bathroom"/>
+			    <label class="star star-3" for="bathroom-3"></label>
+			    <input class="star star-2" id="bathroom-2" type="radio" name="bathroom"/>
+			    <label class="star star-2" for="bathroom-2"></label>
+			    <input class="star star-1" id="bathroom-1" type="radio" name="bathroom"/>
+			    <label class="star star-1" for="bathroom-1"></label>
+
+			</div> 	
+       		</div>
+       	</div>
+
+
+
+       	 </label>
+
+
+
+
+
+	<div class = "form-item">
+     
+        <label>Optional Fields:<br><br>
+       <textarea rows="5" cols="35">Leave a comment...</textarea>
+     </label>
+ </div>
+
+ <div class = "form-item">
+ 		<div class = "two-col">
+ 			<div class = "col1">
+      	 <input type="text" name = "firstName" value="" placeholder="First Name..." />
+      	</div>
+      	<div class = "col2">
+      	 <input type="text" name = "lastName" value="" placeholder="Last Name..." />
+      	 </div>	
+      </div>
+
+      <div class = "form-item">
+       <input type="text" name = "email" value="" placeholder="Email" />	
+       </div>
+  </div>
+
+  <div class = "form-item" >
+  	      	<div class = "two-col">
+        		<div class = "col1">
+        		<label class = "consent" for="consent"> I consent for Qastles to store and display this review for listings associated with the property</label>
+        		</div>
+        		<div class = "col2">
+   			 <input type="checkbox" name="consent" id="consent"> <label for="consent"></label>
+        		</div> 
+        	</div>
+  </div>
+
+ 
+
+    </form>
+<br>
+ <button>Submit</button>
+	</div>
+
+	
+	
+		<script type="text/javascript">
+var placeholder = $("#test").val();
+
+$("#test").keydown(function() {
+    if (this.value == placeholder) {
+        this.value = '';
+    }
+}).blur(function() {
+    if (this.value == '') {
+        this.value = placeholder;
+    }
+});
+</script>
+
+</body>
+</html>
+
+

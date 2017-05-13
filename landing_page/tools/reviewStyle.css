@@ -1,0 +1,487 @@
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+html{
+	background-color: #08233e;
+	overflow-y: scroll; 
+}
+
+
+
+
+body{
+margin:0;
+padding:0;
+color: #fff;
+position: absolute;
+font-family: 'Oxygen', sans-serif;
+text-align: center;
+}
+
+
+.transy{
+	width: 100%;
+height: 100%;
+float: left;
+bottom: 0%;
+position: absolute;
+z-index: -1;
+background: url(../images/review_page.jpeg) no-repeat top center fixed; 
+opacity: 0.2;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.form-item{
+	clear:left;
+}
+
+.form {
+	text-align: center;
+	border-radius: 25px;
+    position:absolute;
+    color:#fff;
+    top:50%;
+    left:50%;
+    width: 40%;
+  	padding: 0.5% 2%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #FDFDFD;
+    color:black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.5);   
+}
+
+.form ul{
+	list-style: none;
+	display: block;
+}
+
+.form ul li{
+	float: left;
+	display: block;
+	width: 85px;
+	text-align: center;
+}
+.form input {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 12px;
+  display: block;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 ;
+  font-size: 10px;
+  padding: 15px;
+   margin-bottom: 15px;
+}
+
+textarea{
+	resize: none;
+ font-family: "Open Sans", sans-serif;
+  border-radius: 12px;
+  display: block;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 ;
+  font-size: 10px;
+  padding: 15px;
+   margin-bottom: 15px;
+}
+
+
+.endorse{
+	position: relative;
+	right: 105px;
+	   margin-bottom: 15px;
+
+}
+
+input[name="endorse"] + label {
+  position: relative;
+ left:  2px; 
+ top: 5px;
+
+
+}
+
+.consent{
+	font-size: 8px;
+}
+
+
+
+ .form button {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 12px;
+  outline: 0;
+  background: #392f91;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+
+}
+
+
+.form h1 {
+	float: left;
+	font-size: 18px;
+	color:#392f91;
+}
+
+.form h2 {
+	float: left;
+	font-size: 12px;
+	margin-bottom: 15px;
+
+}
+
+
+.form h3 {
+	float: left;
+	font-size: 8px;
+	margin-bottom: 10px;
+
+}
+
+
+.form small {
+	float: left;
+}
+
+.form label{
+	text-align: left;
+	float: left;
+	display:block;
+}
+
+.two-col{
+	width: 100%;
+}
+
+.col1{
+	float: left;
+	margin-right: 40px;
+
+}
+
+.col2{
+	float: left;
+
+}
+
+
+.col1-stars{
+	float: left;
+
+}
+
+input[name="consent"] {
+ display:none;
+}
+
+
+input[name="consent"] + label {
+  display: block;
+  position: relative;
+  right:  30px; 
+  bottom: 1px;
+}
+
+
+input[name="consent"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  vertical-align: -0.25em;
+  border-radius: 0.5em;
+  border: 0.2em solid #fff;
+   box-shadow: 0 0 0 0.07em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+
+input[name="consent"]:checked + label:before {
+  background: #392f91;;
+  box-shadow: 0 0 0 0.1em #000;
+}
+
+input[name="consent"]:focus + label:after {
+  content: '\0020\2190';
+  font-size: 1.5em;
+  line-height: 1;
+  vertical-align: -0.125em;
+}
+
+
+
+input[name="endorse"] {
+ display:none;
+}
+
+
+input[name="endorse"] + label {
+  display: block;
+  position: relative;
+  right:  30px; 
+  bottom: 1px;
+}
+
+
+input[name="endorse"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  vertical-align: -0.25em;
+  border-radius: 0.5em;
+  border: 0.2em solid #fff;
+   box-shadow: 0 0 0 0.07em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+
+input[name="endorse"]:checked + label:before {
+  background: #392f91;;
+  box-shadow: 0 0 0 0.1em #000;
+}
+
+input[name="endorse"]:focus + label:after {
+  content: '\0020\2190';
+  font-size: 1.5em;
+  line-height: 1;
+  vertical-align: -0.125em;
+}
+
+
+.wrapper{
+	text-align: center;
+}
+
+
+input[name="location"]{
+	position: relative;
+	right: 10px;
+}
+
+div.stars {
+  width: 160px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 2px;
+  font-size: 12px;
+  color: #392f91;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #dc44ff;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #fb44ff;
+  text-shadow: 0 0 20px  #fb44ff;
+}
+
+input.star-1:checked ~ label.star:before { color:#f725bb }
+
+
+/*#F62;  #952*/
+
+label.star:hover {
+
+    -webkit-transform: translateZ(0px) scale(1.2)  rotate(-10deg);
+    -moz-transform: scale(1.2) rotate(-10deg);
+     }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+
+
+
+input[name="location"] + label {
+  position: relative;
+  left:  10px; 
+}
+
+input[name="value"] + label {
+  position: relative;
+  left:  26px; 
+
+}
+
+input[name="living"] + label {
+  position: relative;
+  right:  12px; 
+
+}
+
+input[name="bedroom"] + label {
+  position: relative;
+
+}
+
+input[name="landlord"] + label {
+  position: relative;
+  right:  45px; 
+
+}
+
+input[name="kitchen"] + label {
+  position: relative;
+  left:  15px; 
+
+}
+
+input[name="bathroom"] + label {
+  position: relative;
+  left:  1px; 
+
+}
+
+
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #6e4594;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+#image{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+/*
+.header, .content{
+	width: 60%;
+	padding: 0px 10%;
+}
+
+#counter{
+	width: 60%;
+	padding: 0 10%;
+
+}
+
+.form{
+	width: 40%;
+	padding: 0 20%;
+}*/
+
+.form{
+	width: 60%;
+	padding: 0 4%;
+}
+
+.field{
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+.form p{
+	font-size: 16px;
+	margin-bottom: 25px;
+	
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+
+
+.form{
+	width: 92%;
+	padding: 0 4%;
+}
+
+.field{
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+.form p{
+	font-size: 16px;
+	margin-bottom: 25px;
+	
+}
+
+
+
+
+
+}
+
+
+
